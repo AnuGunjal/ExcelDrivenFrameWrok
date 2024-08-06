@@ -16,8 +16,7 @@ public class DataDriven {
 	{
 		ArrayList<String> a = new ArrayList<String>();
 		String path = System.getProperty("user.dir");
-		
-		FileInputStream fis = new FileInputStream("src\\test\\resources\\demodata.xlsx");
+		FileInputStream fis = new FileInputStream(path+"\\src\\test\\resources\\demodata.xlsx");
 
 		// XSSFWorkbook accepts fileinput stream argument
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
